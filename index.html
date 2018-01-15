@@ -64,9 +64,9 @@
           <input type="text" name="surname" placeholder="Apellidos">
           <input type="email" name="email"  placeholder="Email">
         </fieldset>
-        <fieldset>
-          <label><input type="checkbox" name="legal"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
-          <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
+        <fieldset class="formCheck">
+          <input type="checkbox" id="checkbox" name="legal"><label for="checkbox">Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
+          <input type="checkbox" id="checkbox2" name="subscription"><label for="checkbox2">Suscríbeme al blog</label>
         </fieldset>
         <button type="submit">Descargar</button>
       </form>
@@ -74,18 +74,20 @@
   </div>
   <!-- Footer -->
   <footer>
-    <div class="footer-frame">
+    <div class="footer-frame container">
       <!-- Logotype -->
       <img src="img/inboundcycle-logo-small.png" class="logotype" alt="InboundCycle">
-      <!-- Legal menu -->
-      <nav>
-        <ul>
-          <li><a href="#" title="Lea nuestra política de privacidad">Política de Privacidad</a></li>
-          <li><a href="#" title="Lea el aviso legal">Aviso Legal</a></li>
-        </ul>
-      </nav>
-      <!-- Copyright -->
-      <small>InboundCycle © 2015</small>
+      <div class="footerRightContainer">
+        <!-- Copyright -->
+        <small>InboundCycle © 2015</small>
+        <!-- Legal menu -->
+        <nav>
+          <ul>
+            <li><a href="#" title="Lea nuestra política de privacidad">Política de Privacidad</a></li>
+            <li><a href="#" title="Lea el aviso legal">Aviso Legal</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </footer>
   <!-- Pop-up -->
