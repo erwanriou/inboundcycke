@@ -246,6 +246,81 @@ footer li:before {
 
 .popup {
   display: none;
+  position: absolute;
+  top: 20rem;
+  right: 50%;
+  z-index: 3;
 }
 
 /* Media Queries */
+
+@media only screen and (max-width: 1000px) {
+  .headerMenu, footer {
+    padding: 0 2rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+  }
+  section img {
+    right: 2rem;
+  }
+  section h1, section h2 {
+    padding-left: 2rem;
+  }
+  section p, section .emphasizes {
+    padding: 2rem;
+  }
+  aside {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .headerMenu, .footer-frame {
+    flex-direction: column;
+    width: auto;
+  }
+  .headerMenu img{
+    width: 200px;
+    padding-bottom: 1rem;
+  }
+  .social-icons {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  section img {
+    width: 100px;
+    padding: 0;
+  }
+  section h1, section h2 {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+
+  .footer-frame img {
+    width: 200px;
+    margin: 1rem auto;
+  }
+  .footerRightContainer, footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer li {
+    padding-top: 0.5rem;
+  }
+  footer li:before {
+     content: none;
+  }
+}

@@ -57,15 +57,15 @@
     <!-- Aside -->
     <aside>
       <!-- Download form -->
-      <form action="post">
+      <form action="post "id="form">
         <h3>Descargar e-book gratis</h3>
         <fieldset>
-          <input type="text" name="name" placeholder="Nombre">
-          <input type="text" name="surname" placeholder="Apellidos">
-          <input type="email" name="email"  placeholder="Email">
+          <input type="text" name="name" required placeholder="Nombre">
+          <input type="text" name="surname" required placeholder="Apellidos">
+          <input type="email" name="email"  required placeholder="Email">
         </fieldset>
         <fieldset class="formCheck">
-          <input type="checkbox" id="checkbox" name="legal"><label for="checkbox">Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
+          <input type="checkbox" required id="checkbox" name="legal"><label for="checkbox">Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
           <input type="checkbox" id="checkbox2" name="subscription"><label for="checkbox2">Suscríbeme al blog</label>
         </fieldset>
         <button type="submit">Descargar</button>
@@ -99,4 +99,5 @@
   </div>
   <!-- JS Scripts -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
