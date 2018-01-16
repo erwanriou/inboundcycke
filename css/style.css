@@ -247,9 +247,27 @@ footer li:before {
 .popup {
   display: none;
   position: absolute;
-  top: 20rem;
+  background-color: #ed5900;
+  color: white;
+  padding: 6rem;
+  top: 50%;
   right: 50%;
+  transform: translate(50%,50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 3;
+}
+
+.popup .fa {
+  position: absolute;
+  font-size: 2rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  transition: all 0.3s linear;
+}
+
+.popup .fa:hover {
+  cursor: pointer;
+  color: orange;
 }
 
 /* Media Queries */
@@ -282,6 +300,9 @@ footer li:before {
     margin: 0 auto;
     padding: 0;
     width: 100%;
+  }
+  .popup {
+    top: 150%;
   }
 }
 
@@ -322,5 +343,8 @@ footer li:before {
   }
   footer li:before {
      content: none;
+  }
+  .popup {
+    top: 180%;
   }
 }
