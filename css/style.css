@@ -250,7 +250,7 @@ footer li:before {
   background-color: #ed5900;
   color: white;
   padding: 6rem;
-  top: 50%;
+  top: 25%;
   right: 50%;
   transform: translate(50%,50%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -302,7 +302,7 @@ footer li:before {
     width: 100%;
   }
   .popup {
-    top: 150%;
+    top: 75%;
   }
 }
 
@@ -345,6 +345,6 @@ footer li:before {
      content: none;
   }
   .popup {
-    top: 180%;
+    top: 90%;
   }
 }
